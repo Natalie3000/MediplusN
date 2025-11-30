@@ -25,6 +25,6 @@ jobs:
 
       - name: Build, tag, and push Docker image
         run: |
-          docker build -t mediplus .
+          docker build -t mediplus:v1 .
           docker tag mediplus:v1 705307574352.dkr.ecr.us-east-1.amazonaws.com/mediplus:v1
           docker push 705307574352.dkr.ecr.us-east-1.amazonaws.com/mediplus:v1
